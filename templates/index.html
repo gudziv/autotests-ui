@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        h3 {
+            font-size:20px;
+        }
         .h2-text {
             color: deeppink;
+        }
+        .h3-text {
+            color: darkblue;
+        }
+        div.playwright > a {
+            color: aquamarine;
+        }
+        ul li {
+            color: green;
+        }
+        input[type="text"] {
+            background-color: bisque;
+        }
+          input[type="text"]:hover {
+            background-color: olive;
+        }
+        a:hover {
+            color: red;
+        }
+        li::marker {
+            color: brown;
+        }
+        ul > li:nth-child(2) {
+            color: blue;
         }
     </style>
 </head>
 <body>
-<div>
+<div class="playwright">
     <h1 id="h1-text">Installation</h1>
+    <h1>H1 text 2</h1>
     <h2 class="h2-text">Introduction</h2>
+    <h3 class="h2-text h3-text">Cross-browser</h3>
     <p>
         Playwright was created specifically to accommodate the needs of end-to-end testing. Playwright supports all
         modern
@@ -68,6 +97,21 @@
 
         </tbody>
     </table>
+    <div class="nth">
+        <p>1</p>
+        <p>2</p>
+        <h6>3</h6>
+        <h5>4</h5>
+        <p>5</p>
+    </div>
+</div>
+<div class="pytest">
+   <a href="/python/docs/intro#installing-playwright-pytest" target="_blank">How to install Playwright Pytest</a>
+   <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+   </ul>
 </div>
 </body>
 </html>
