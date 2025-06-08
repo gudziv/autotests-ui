@@ -29,11 +29,9 @@ with sync_playwright() as playwright:
     page = context.new_page()
 
     page.goto('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses')
-    page.wait_for_timeout(5000)
 
     button_courses = page.get_by_test_id('courses-drawer-list-item-title-text')
     button_courses.click()
-    page.wait_for_timeout(5000)
 
     title_courses = page.get_by_test_id('courses-list-toolbar-title-text')
     expect(title_courses).to_have_text('Courses')
