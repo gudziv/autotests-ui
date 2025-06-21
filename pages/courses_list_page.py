@@ -60,15 +60,15 @@ class CoursesListPage(BasePage):
             min_score: str,
             estimated_time: str
     ):
-        expect(self.course_image.nth(index)).not_to_be_visible()
+        expect(self.course_image.nth(index)).to_be_visible()
 
-        expect(self.course_title.nth(index)).not_to_be_visible()
+        expect(self.course_title.nth(index)).to_be_visible()
         expect(self.course_title.nth(index)).to_have_text(title)
 
-        expect(self.course_max_text.nth(index)).not_to_be_visible()
+        expect(self.course_max_text.nth(index)).to_be_visible()
         expect(self.course_max_text.nth(index)).to_have_text(f'Max score: {max_score}')
 
-        expect(self.course_min_text.nth(index)).not_to_be_visible()
+        expect(self.course_min_text.nth(index)).to_be_visible()
         expect(self.course_min_text.nth(index)).to_have_text(f'Min score: {min_score}')
 
         expect(self.course_estimated_time_text.nth(index)).to_be_visible()
