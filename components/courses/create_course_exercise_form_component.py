@@ -24,8 +24,6 @@ class CreateCourseExerciseFormComponent(BaseComponent):
             page, "create-course-exercise-form-description-{index}-input", 'Description'
         )
 
-
-
     def click_delete_button(self, index: int):
         self.delete_exercise_button.click(index=index)
 
@@ -47,6 +45,3 @@ class CreateCourseExerciseFormComponent(BaseComponent):
 
         self.description_input.fill(description, index=index)
         self.description_input.check_have_value(description, index=index)
-
-
-

@@ -23,3 +23,6 @@ class BaseElement:
         locator = self.get_locator(**kwargs)
         expect(locator).to_have_text(text)
 
+    def clear_field(self,):
+        locator = self.get_locator()
+        locator.clear()
