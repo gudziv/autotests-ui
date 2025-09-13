@@ -13,7 +13,6 @@ class CreateCourseExerciseFormComponent(BaseComponent):
         self.delete_exercise_button = Button(
             page, "create-course-exercise-{index}-box-toolbar-delete-exercise-button", 'Delete exercise'
         )
-
         self.subtitle = Text(
             page, "create-course-exercise-{index}-box-toolbar-subtitle-text", 'Exercise subtitle'
         )
@@ -36,8 +35,6 @@ class CreateCourseExerciseFormComponent(BaseComponent):
 
         self.description_input.check_visible(index=index)
         self.description_input.check_have_value(description, index=index)
-
-
 
     def fill_create_exercise_form(self, index: int, title: str, description: str):
         self.title_input.fill(title, index=index)

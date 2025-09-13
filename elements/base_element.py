@@ -26,3 +26,4 @@ class BaseElement:
     def clear_field(self, nth :int = 0,):
         locator = self.get_locator(nth)
         locator.clear()
+        

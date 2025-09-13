@@ -1,4 +1,5 @@
 from playwright.sync_api import Page
+
 from components.base_component import BaseComponent
 from elements.text import Text
 from elements.image import Image
@@ -14,4 +15,5 @@ class ChartViewComponent(BaseComponent):
     def check_visible(self, title: str):
         self.title.check_visible()
         self.title.check_have_text(title)
+        
         self.chart.check_visible()

@@ -1,4 +1,5 @@
 from playwright.sync_api import Page
+
 from components.base_component import BaseComponent
 from elements.button import Button
 
@@ -22,3 +23,4 @@ class CourseViewMenuComponent(BaseComponent):
 
         self.delete_menu_button.check_visible(nth=index)
         self.delete_menu_button.click(nth=index)
+        

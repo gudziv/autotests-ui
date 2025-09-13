@@ -8,10 +8,13 @@ from elements.text import Text
 class EmptyViewComponent(BaseComponent):
     def __init__(self, page: Page, identifier: str):
         super().__init__(page)
-
         self.icon = Icon(page,f'{identifier}-empty-view-icon','{identifier} Icon')
+        
         self.title = Text(page,f'{identifier}-empty-view-title-text','{identifier} Title')
-        self.description = Text(page, f'{identifier}-empty-view-description-text', '{identifier} Description')
+        
+        self.description = Text(
+            page, f'{identifier}-empty-view-description-text', '{identifier} Description'
+        )
 
     def check_visible(self, title: str, description: str):
         self.icon.check_visible()

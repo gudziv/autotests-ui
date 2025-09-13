@@ -1,5 +1,6 @@
-from typing import Pattern
 from playwright.sync_api import Page
+
+from typing import Pattern
 
 from components.base_component import BaseComponent
 from elements.icon import Icon

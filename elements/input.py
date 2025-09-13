@@ -1,5 +1,6 @@
-from elements.base_element import BaseElement
 from playwright.sync_api import expect, Locator
+
+from elements.base_element import BaseElement
 
 
 class Input(BaseElement):
@@ -13,3 +14,4 @@ class Input(BaseElement):
     def check_have_value(self, value: str, nth :int = 0, **kwargs):
         locator = self.get_locator(nth, **kwargs)
         expect(locator).to_have_value(value)
+        
