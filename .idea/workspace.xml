@@ -5,96 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27ffd111-0521-4a24-9151-25f9923c0a26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/browser-state.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/authentication/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/authentication/login_form_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/authentication/registration_form_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/base_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/charts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/charts/chart_view_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/course_vie_menu_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/course_view_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/courses_list_toolbar_view_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/create_course_exercise_form_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/create_course_exercises_toolbar_view_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/create_course_form_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/courses/create_course_toolbar_view_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/dashboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/dashboard/dashboard_toolbar_view_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation/navbar_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation/sidebar_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation/sidebar_list_item_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/views/empty_view_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/views/image_upload_widget_component.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/base_element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/button.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/file_input.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/icon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/input.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/link.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elements/textarea.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixtures/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixtures/browsers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixtures/pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/authentication/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/authentication/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/authentication/registration_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/courses/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/courses/courses_list_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/courses/create_course_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/dashboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/dashboard/dashboard_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_autorization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_courses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_disabled.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_events.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_hover.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_js.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_keyboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_registration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_registration_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright_registration_button.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testdata/files/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/authentication/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/authentication/test_autorization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/authentication/test_registration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/browser-state.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/courses/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/courses/test_courses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/dashboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/dashboard/test_dashboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_fixtures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_import.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_markers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_parametrization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_pytest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_pytest_skip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_pytest_skipif.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_pytest_xfail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_reruns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pytest/test_usefixtures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/autotests-ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autotests-ui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/courses.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/courses.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/browser-state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/courses_list_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courses_list_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/create_course_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/create_course_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/authentication/test_autorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/authentication/test_autorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/courses/test_courses.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/courses/test_courses.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,12 +45,15 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Material Theme Notifications&quot;: &quot;Material theme UI notifications&quot;,
+    &quot;Notification.DoNotAsk-Material Theme Notifications&quot;: &quot;true&quot;,
+    &quot;Python tests.pytest for tests.courses.test_courses.TestCourses.test_create_course.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest for tests.test_autorization.test_wrong_email_or_password_authorization.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -151,7 +72,7 @@
       <recent name="D:\courses\tests\authentication" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests.authentication.test_autorization.test_wrong_email_or_password_authorization">
+  <component name="RunManager" selected="Python tests.pytest for tests.courses.test_courses.TestCourses.test_create_course">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="autotests-ui" />
       <option name="ENV_FILES" value="" />
@@ -193,8 +114,26 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for tests.courses.test_courses.TestCourses.test_create_course" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="courses" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.courses.test_courses.TestCourses.test_create_course&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for tests.courses.test_courses.TestCourses.test_create_course" />
         <item itemvalue="Python tests.pytest for tests.authentication.test_autorization.test_wrong_email_or_password_authorization" />
         <item itemvalue="Python.main" />
       </list>
