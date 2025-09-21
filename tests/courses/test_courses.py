@@ -1,12 +1,14 @@
 import pytest
 import allure
+from allure_commons.types import Severity
+
 from pages.courses.create_course_page import CreateCoursePage
 from pages.courses.courses_list_page import CoursesListPage
-from tools.allure.tags import AllureTag
+
 from tools.allure.epics import AllureEpic
 from tools.allure.feaures import AllureFeature
 from tools.allure.stories import AllureStory
-from allure_commons.types import Severity
+from tools.allure.tags import AllureTag
 
 
 @pytest.mark.courses
@@ -15,6 +17,9 @@ from allure_commons.types import Severity
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.COURSES)
 @allure.story(AllureStory.COURSES)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.COURSES)
+@allure.sub_suite(AllureStory.COURSES)
 class TestCourses:
     @allure.title('Check displaying of empty courses list')
     @allure.severity(Severity.NORMAL)
