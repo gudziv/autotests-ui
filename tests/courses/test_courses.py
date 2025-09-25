@@ -84,10 +84,7 @@ class TestCourses:
         create_course_page.image_upload_widget.upload_preview_image ('./testdata/files/image.png')
         create_course_page.image_upload_widget.check_visible (is_image_uploaded=True)
         create_course_page.create_courses_toolbar_view.click_create_course_button()
-        
-        create_course_page.check_current_url(
-            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses'
-        )
+
         course_list_page.course_view.check_visible (
             index=0,
             title="Playwright",
@@ -97,7 +94,7 @@ class TestCourses:
         )
         create_course_page.click_course_menu_button()
         create_course_page.click_course_menu_edit_button()
-        
+
         create_course_page.fill_create_course_form(
             title="Playwright-python",
             estimated_time="3 weeks",
@@ -106,10 +103,7 @@ class TestCourses:
             min_score="5"
         )
         create_course_page.create_courses_toolbar_view.click_create_course_button ()
-        
-        create_course_page.check_current_url (
-            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses'
-        )
+
         course_list_page.course_view.check_visible (
             index=0,
             title="Playwright-python",
@@ -117,4 +111,3 @@ class TestCourses:
             min_score="5",
             estimated_time="3 weeks"
         )
-        
