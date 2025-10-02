@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page
 
 from components.base_component import BaseComponent
@@ -22,7 +23,8 @@ class DashboardToolbarViewComponent(BaseComponent):
 
         self.scores_title = Text(page, 'scores-widget-title-text', 'Scores')
         self.scores_chart = Image(page,'scores-scatter-chart', 'scores-scatter-chart')
-
+    
+    @allure.step('Check visible dashboard toolbar title')
     def check_visible(self):
         self.title.check_visible()
         self.title.check_have_text('Dashboard')
