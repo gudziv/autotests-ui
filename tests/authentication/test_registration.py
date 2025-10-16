@@ -28,7 +28,7 @@ class TestRegistration:
         registration_page.registration_form.fill(
             email='user.name@gmail.com',
             username='username',
-            password_value='password'
+            password='password'
         )
         registration_page.click_registration_button()
 

@@ -23,7 +23,7 @@ class BaseElement:
             locator.click()
 
     def check_visible(self, nth :int = 0,**kwargs):
-        with allure.step(f'Checking that {self.type_of} "{self.name}"'):
+        with allure.step(f'Checking that {self.type_of} "{self.name}" is visible'):
             locator = self.get_locator(nth, **kwargs)
             expect(locator).to_be_visible()
 

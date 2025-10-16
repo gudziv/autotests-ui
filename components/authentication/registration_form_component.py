@@ -14,24 +14,24 @@ class RegistrationFormComponent (BaseComponent):
         self.password_input = Input(page,'registration-form-password-input', 'Password')
         
     @allure.step('Fill registration form')
-    def fill(self, email: str, username: str, password_value: str):
+    def fill(self, email: str, username: str, password: str):
         self.email_input.clear_field()
         self.username_input.clear_field()
         self.password_input.clear_field()
 
         self.email_input.fill(email)
         self.username_input.fill(username)
-        self.password_input.fill(password_value)
+        self.password_input.fill(password)
 
         self.email_input.check_have_value(email)
         self.username_input.check_have_value(username)
-        self.password_input.check_have_value(password_value)
+        self.password_input.check_have_value(password)
 
     @allure.step('Check visible registration form')
-    def check_visible(self, email: str, username: str, password_value: str):
+    def check_visible(self, email: str, username: str, password: str):
         self.email_input.check_visible()
         self.email_input.check_have_text(email)
         self.username_input.check_visible()
         self.username_input.check_have_text(username)
         self.password_input.check_visible()
-        self.password_input.check_have_text(password_value)
+        self.password_input.check_have_text(password)
