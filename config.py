@@ -27,6 +27,8 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",  # Указываем кодировку файла
         env_nested_delimiter=".",  # Указываем разделитель для вложенных переменных
     )
+    def get_base_url(self) -> str:
+        return f"{self.app_url}/"
 
     app_url: HttpUrl
     headless: bool
