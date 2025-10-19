@@ -11,13 +11,15 @@ class Browser(str, Enum):
     CHROMIUM = "chromium"
 
 
-class TestUser(BaseModel):
+class TestUser(BaseSettings):
+    model_config = SettingsConfigDict (env_prefix="TEST_USER")
     email: EmailStr
     username: str
     password: str
 
 
-class TestData(BaseModel):
+class TestData(BaseSettings):
+    model_config = SettingsConfigDict (env_prefix="TEST_DATA")
     image_png_file: FilePath
 
 
@@ -27,9 +29,6 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",  # Указываем кодировку файла
         env_nested_delimiter=".",  # Указываем разделитель для вложенных переменных
     )
-    def get_base_url(self) -> str:
-        return f"{self.app_url}/"
-
     app_url: HttpUrl
     headless: bool
     browsers: list[Browser]
@@ -38,6 +37,9 @@ class Settings(BaseSettings):
     videos_dir: DirectoryPath
     tracing_dir: DirectoryPath
     browser_state_file: FilePath
+    
+    def get_base_url(self) -> str:
+        return f"{self.app_url}/"
     
     @classmethod
     def initialize(cls) -> Self:

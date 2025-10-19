@@ -3,14 +3,19 @@ from collections.abc import Generator
 from _pytest.fixtures import SubRequest
 from playwright.sync_api import Playwright, Page
 
+from config import settings
 from pages.authentication.registration_page import RegistrationPage
 from tools.playwright.pages import initialize_playwright_page
-from config import settings
+from tools.routes import AppRoute
 
 
-@pytest.fixture
-def chromium_page(request: SubRequest, playwright: Playwright) -> Generator[Page, None, None]:
-    yield from initialize_playwright_page(playwright, test_name=request.node.name)
+@pytest.fixture(params=settings.browsers)
+def page(request: SubRequest, playwright: Playwright) -> Generator[Page, None, None]:
+    yield from initialize_playwright_page(
+        playwright,
+        test_name=request.node.name,
+        browser_type=request.param
+    )
 
 @pytest.fixture(scope="session")
 def initialize_browser_state(playwright: Playwright):
@@ -19,7 +24,7 @@ def initialize_browser_state(playwright: Playwright):
     page = context.new_page()
 
     registration_page = RegistrationPage(page=page)
-    registration_page.visit ("./#/auth/registration")
+    registration_page.visit (AppRoute.REGISTRATION)
     registration_page.registration_form.fill(
         email=settings.test_user.email,
         username=settings.test_user.username,
@@ -31,8 +36,8 @@ def initialize_browser_state(playwright: Playwright):
     browser.close()
 
 
-@pytest.fixture
-def chromium_page_with_state(
+@pytest.fixture(params=settings.browsers)
+def page_with_state(
         initialize_browser_state,
         request: SubRequest,
         playwright: Playwright
@@ -40,6 +45,7 @@ def chromium_page_with_state(
     yield from initialize_playwright_page(
         playwright,
         test_name=request.node.name,
+        browser_type=request.param,
         storage_state=settings.browser_state_file
     )
     
