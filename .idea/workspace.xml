@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27ffd111-0521-4a24-9151-25f9923c0a26" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/playwright/mocks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser_state_json" beforeDir="false" afterPath="$PROJECT_DIR$/browser_state_json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/courses/create_course_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/create_course_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/authentication/test_autorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/authentication/test_autorization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/authentication/test_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/authentication/test_registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/courses/test_courses.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/courses/test_courses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dashboard/test_dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dashboard/test_dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pytest/test_fixtures.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pytest/test_fixtures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pytest/test_pytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pytest/test_pytest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pytest/test_pytest_skip.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pytest/test_pytest_skip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pytest/test_pytest_skipif.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pytest/test_pytest_skipif.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pytest/test_usefixtures.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pytest/test_usefixtures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/playwright/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/playwright/pages.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
