@@ -29,7 +29,7 @@ def dashboard_page_with_state(page_with_state: Page) -> DashboardPage:
     return DashboardPage(page=page_with_state)
 
 @pytest.fixture()
-def course_list_page(page_with_state: Page) -> CoursesListPage:
+def courses_list_page(page_with_state: Page) -> CoursesListPage:
     return CoursesListPage(page_with_state)
 
 @pytest.fixture()

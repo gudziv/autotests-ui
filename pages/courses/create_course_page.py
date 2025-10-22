@@ -21,7 +21,7 @@ class CreateCoursePage(BasePage):
 
         self.image_upload_widget = ImageUploadWidgetComponent(page, identifier='create-course-preview')
 
-        self.create_courses_toolbar_view = CreateCourseToolbarViewComponent(page)
+        self.create_course_toolbar_view = CreateCourseToolbarViewComponent(page)
 
         self.create_course_form = CreateCourseFormComponent(page)
 
@@ -32,16 +32,16 @@ class CreateCoursePage(BasePage):
         self.course_view_menu_component = CourseViewMenuComponent(page)
 
     def check_visible_create_course_title(self):
-        self.create_courses_toolbar_view.check_visible(is_create_course_disabled=True)
+        self.create_course_toolbar_view.check_visible(is_create_course_disabled=True)
 
     def click_create_course_button(self):
-        self.create_courses_toolbar_view.create_course_button.click()
+        self.create_course_toolbar_view.create_course_button.click()
 
     def check_visible_create_course_button(self):
-        self.create_courses_toolbar_view.create_course_button.check_visible()
+        self.create_course_toolbar_view.create_course_button.check_visible()
 
     def check_disabled_create_course_button(self):
-        self.create_courses_toolbar_view.create_course_button.check_disabled()
+        self.create_course_toolbar_view.create_course_button.check_disabled()
 
     def check_visible_create_course_form(
             self,

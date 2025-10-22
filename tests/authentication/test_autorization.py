@@ -23,6 +23,7 @@ from tools.routes import AppRoute
 @allure.suite(AllureFeature.AUTHENTICATION)
 @allure.sub_suite(AllureStory.AUTHORISATION)
 class TestAuthorization:
+    @pytest.mark.xdist_group(name="authorization-group")
     @pytest.mark.parametrize(
         "email, password",
         [
@@ -36,10 +37,7 @@ class TestAuthorization:
     @allure.severity(Severity.CRITICAL)
     def test_wrong_email_or_password_authorization(self, login_page: LoginPage, email: str, password: str):
         login_page.visit(AppRoute.LOGIN)
-        login_page.login_form.fill(
-            email=settings.test_user.email,
-            password=settings.test_user.password
-        )
+        login_page.login_form.fill(email=email, password=password)
         login_page.click_login_button()
         login_page.check_visible_wrong_email_or_password_alert()
 
@@ -65,10 +63,7 @@ class TestAuthorization:
         dashboard_page.sidebar.check_visible()
         dashboard_page.sidebar.click_logout()
 
-        login_page.login_form.fill(
-            email=settings.test_user.email,
-            password=settings.test_user.password
-        )
+        login_page.login_form.fill(email=settings.test_user.email, password=settings.test_user.password)
         login_page.click_login_button()
 
         dashboard_page.dashboard_toolbar_view.check_visible()
