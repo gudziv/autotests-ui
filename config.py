@@ -1,3 +1,5 @@
+import platform
+import sys
 from enum import Enum
 from typing import Self
 
@@ -41,6 +43,8 @@ class Settings(BaseSettings):
     tracing_dir: DirectoryPath
     allure_results_dir: DirectoryPath  # Добавили новое поле
     browser_state_file: FilePath
+    # os_info: list[platform.system(), platform.release()]
+    # python_version: sys.version
 
     def get_base_url(self) -> str:
         return f"{self.app_url}/"
