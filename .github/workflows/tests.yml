@@ -28,6 +28,9 @@ jobs:
           playwright install --with-deps
 
       - name: Run Playwright tests with pytest and generate Allure results
+        env:
+          CI: true
+          HEADLESS: true
         run: |
           pytest -m regression --alluredir=./allure-results --numprocesses 2
           
