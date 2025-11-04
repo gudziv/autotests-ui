@@ -33,31 +33,43 @@ jobs:
           HEADLESS: true
         run: |
           pytest -m regression --alluredir=./allure-results --numprocesses 2
-
-      - name: Get Allure history
-        uses: actions/checkout@v2
+          
+      - name: Upload Allure results
         if: always()
-        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
+
+  job_2:
+    name: publish-report
+    if: always()
+    needs: job_1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report action from marketplace
+      - name: Download Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
+
+      - name: Generates Allure Report with history
         uses: simple-elf/allure-report-action@v1.13
         if: always()
         with:
           allure_results: allure-results
           allure_history: allure-history
 
-  job_2:
-    name: publish-report
-    needs: job_1
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy report to Github pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-
