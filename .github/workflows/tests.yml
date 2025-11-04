@@ -49,6 +49,10 @@ jobs:
           allure_results: allure-results
           allure_history: allure-history
 
+  publish-report:
+    needs: run-tests
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy report to Github pages
         uses: peaceiris/actions-gh-pages@v4
         with:
