@@ -36,7 +36,7 @@ class BaseElement:
         )
     
     def click(self, nth :int = 0,**kwargs):
-        step = f'Clicking that {self.type_of} "{self.name}" is visible'
+        step = f'Clicking {self.type_of} "{self.name}"'
         
         with allure.step(step):
             locator = self.get_locator(nth, **kwargs)
@@ -44,6 +44,7 @@ class BaseElement:
             locator.click()
             
         self.track_coverage(ActionType.CLICK, nth, **kwargs)
+        
     def check_visible(self, nth :int = 0,**kwargs):
         step = f'Checking that {self.type_of} "{self.name}" is visible'
         

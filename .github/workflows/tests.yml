@@ -33,10 +33,38 @@ jobs:
           HEADLESS: true
         run: |
           pytest -m regression --alluredir=./allure-results --numprocesses 2
+
+      # Восстанавливаем историю покрытия из кеша
+      - name: Restore Coverage history
+        uses: actions/cache/restore@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+          restore-keys: |
+            coverage-history-
+
+      - name: Generate Coverage report
+        run: |
+          ui-coverage-tool save-report          
+
+      # Сохраняем историю обратно в кеш
+      - name: Cache Coverage  history
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+
+      - name: Upload Coverage results
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: coverage-report
+          path: coverage.html
           
       - name: Upload Allure results
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: allure-results
           path: allure-results
