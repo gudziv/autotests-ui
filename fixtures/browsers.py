@@ -35,7 +35,6 @@ def initialize_browser_state(playwright: Playwright):
     context.storage_state(path=settings.browser_state_file)
     browser.close()
 
-
 @pytest.fixture(params=settings.browsers)
 def page_with_state(
         initialize_browser_state,
